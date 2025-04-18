@@ -74,5 +74,5 @@ else {
 	}
 
 # Attendre que l'utilisateur appuie sur une touche avant de fermer
-Write-Output "`nAppuyez sur une touche pour continuer..."
+Write-Output "Appuyez sur une touche pour continuer..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
