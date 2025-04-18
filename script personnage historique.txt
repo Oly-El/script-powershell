@@ -19,12 +19,12 @@ if ($personnageLowerCase -eq "napoleon") {
 	else {
 		Write-Output "Image de Napoleon non trouvée à l'emplacement
 		: $imagePath"
-		Write-Output " _ _ _ "d
-		Write-Output " | \ | | __ _ _ __ __| | ___ ___ _ __ "
-		Write-Output " | \| |/ _' | '_ \ / _' |/ _ \/ _ \| '_ \ "
-		Write-Output " | |\ | (_| | |_) | (_| | __/ (_) | | | |"
-		Write-Output " |_| \_|\__,_| .__/ \__,_|f\___|\___/|_| |_|"
-		Write-Output " |_| "
+		Write-Output "  _   _                 _ "
+		Write-Output " | \ | | __ _ _ __   __| | ___  ___  _ __ "
+		Write-Output " | \| | / _' | '_ \ / _' |/ _ \/ _ \| '_ \ "
+		Write-Output " | |\ |  (_| | |_) | (_| |  __/ (_) | | | |"
+		Write-Output " |_| \_|\__,_| .__/ \__,_|\___|\___/|_| |_|"
+		Write-Output "             |_| "
 		}
 	}
 
@@ -50,8 +50,22 @@ elseif ($personnageLowerCase -eq "caesar") {
 
 elseif ($personnageLowerCase -eq "elio") {
 	$imagePath = "C:\Users\User\Pictures\elio.jpg"
-	Invoke-Item $imagePath
-	Write-Output "Voici l'image secrète"
+	if (Test-Path $imagePath) {
+		Invoke-Item $imagePath
+		Write-Output "Voici l'image secrète"
+		}
+	else {
+		Write-Output "Image de Caesar non trouvée à l'emplacement :
+		$imagePath"
+		Write-Output "                              ##"
+		Write-Output "                              ## "
+		Write-Output "  ####     ####     #####    #####    ####    ######             ####     ### ##   ### ##"
+		Write-Output " ##  ##       ##   ##         ##     ##  ##    ##  ##           ##  ##   ##  ##   ##  ##"
+		Write-Output " ######    #####    #####     ##     ######    ##               ######   ##  ##   ##  ##"
+		Write-Output " ##       ##  ##        ##    ## ##  ##        ##               ##        #####    #####"
+		Write-Output "  #####    #####   ######      ###    #####   ####               #####       ##       ##"
+		Write-Output "                                                                         #####    #####"
+		}
 	}
 
 else {
