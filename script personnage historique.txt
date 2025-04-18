@@ -39,12 +39,12 @@ elseif ($personnageLowerCase -eq "caesar") {
 	else {
 		Write-Output "Image de Caesar non trouvée à l'emplacement :
 		$imagePath"
-		Write-Output " _____ "
-		Write-Output " / ____| "
-		Write-Output " | | __ _ ___ ___ __ _ _ __ "
-		Write-Output " | | / _' |/ _ \/ __|/ _' | '__|"
-		Write-Output " | |___| (_| | __/\__ \ (_| | | "
-		Write-Output " \_____\__,_|\___||___/\__,_|_| "
+		Write-Output "   _____ "
+		Write-Output "  / ____| "
+		Write-Output " | |     __ _  ___  ___  __ _ _ __ "
+		Write-Output " | |    / _' |/ _ \/ __|/ _' | '__|"
+		Write-Output " | |___| (_| |  __/\__ \ (_| | | "
+		Write-Output "  \_____\__,_|\___||___/\__,_|_| "
 		}
 	}
 
